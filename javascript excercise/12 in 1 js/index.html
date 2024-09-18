@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS EXCERCISES</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <h1 class="para"> JAVA SCRIPT EXCERCISES</h1>
+    <div class="container">
+        <div class="box">
+            <div class="container1">
+                <h1>Celsius to Fahrenheit Converter</h1>
+                <label for="celsiusInput"> Enter The Celsius</label>
+                <br>
+                <input class="input1" type="number" id="celsiusInput" placeholder="Enter temperature in Celsius">
+                <br>
+                <button class="button1" onclick="convertToFahrenheit()">Convert</button>
+                <div id="result"></div>
+            </div>
+
+            <div class="container2">
+                <h1>Palindrome Checker</h1>
+                <input class="input2" type="text" id="inputString" placeholder="Enter a string">
+                <button class="button2" onclick="checkPalindrome()">Check</button>
+                <p id="result1"></p>
+            </div>
+
+
+            <div class="container3">
+                <h1>EB Bill Amount Calculator</h1>
+                <input class="input3" type="number" id="units" placeholder="Enter units consumed">
+                <button class="button3" onclick="calculateBill()">Calculate</button>
+                <p id="result3"></p>
+            </div>
+
+            <div class="container4">
+                <h1>FD Rate Calculator</h1>
+                <input class="input4" type="number" id="tenure" placeholder="Enter tenure in months">
+                <button class="button4" onclick="calculateFDRate()">Calculate</button>
+                <p id="result4"></p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="container5">
+                <h1>Simple Calculator</h1>
+                <input type="text" id="expression" placeholder="Enter expression ">
+                <button onclick="calculate()">Calculate</button>
+                <p id="result5"></p>
+            </div>
+
+            <div class="container6">
+                <h1>Check Job Eligibility</h1>
+                <form id="qualificationForm">
+                    <label>
+                        <input type="radio" name="qualification" value="illiterate"> Illiterate
+                    </label><br>
+                    <label>
+                        <input type="radio" name="qualification" value="high school"> High School
+                    </label><br>
+                    <label>
+                        <input type="radio" name="qualification" value="ug"> Undergraduate (UG)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="qualification" value="pg"> Postgraduate (PG)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="qualification" value="doctorate"> Doctorate
+                    </label><br><br>
+                    <button type="button" onclick="checkEligibility()">Check Eligibility</button>
+                </form>
+                <div id="result6"></div>
+            </div>
+
+
+
+            <div class="container7">
+                <h1>User Profile</h1>
+                <div id="userDetails"></div>
+
+                <h2>Modify User Details</h2>
+                <form id="userForm">
+                    <label>
+                        Enter The Name: <input type="text" id="nameInput">
+                    </label><br>
+                    <label>
+                        Enter The Age: <input type="number" id="ageInput">
+                    </label><br>
+                    <label>
+                        Qualification:
+                        <select id="qualificationInput">
+                            <option value="illiterate">Illiterate</option>
+                            <option value="high school">High School</option>
+                            <option value="ug">Undergraduate (UG)</option>
+                            <option value="pg">Postgraduate (PG)</option>
+                            <option value="doctorate">Doctorate</option>
+                        </select>
+                    </label><br><br>
+                    <button type="button" onclick="updateUserDetails()">Update User</button>
+                </form>
+                <div id="result7"></div>
+            </div>
+
+            <div class="container8">
+                <h1>Random Letter from Name</h1>
+                <button onclick="generateRandomLetter()">Generate Random Letter</button>
+                <div id="randomLetter"></div>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="container9">
+                <h1>Array Operations</h1>
+                
+                <!-- List of Elements -->
+                <h2>Departments</h2>
+                <ul id="departmentList"></ul>
+        
+                <!-- Sum of Positive Numbers -->
+                <h2>Sum of Positive Numbers</h2>
+                <div id="sumResult"></div>
+            </div>
+
+            <div class="container10">
+                <h1>Cart Summary</h1>
+                <div id="cartSummary"></div>
+                <button onclick="updateCartSummary()">Update Summary</button>
+            </div>
+
+            <div class="container11">
+                <h1>Array Manipulation</h1>
+                <button onclick="manipulateArray()">Manipulate Array</button>
+                <div id="result11"></div>
+            </div>
+            <div class="container12">
+                <h1>Letter Counter</h1>
+                <textarea id="textInput" placeholder="Type your text here..." rows="10" cols="50"></textarea>
+                <button onclick="countLetters()">Count Letters</button>
+                <div id="letterCount"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

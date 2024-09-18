@@ -1,0 +1,154 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+body {
+    font-family: arial;
+    font-size: 16px;
+    margin: 0;
+   
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0,.5 ), rgba(0, 0, 0, .5)),
+    url(../images/pexels-photo-4386441.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quote {
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+
+.quote:hover {
+    background: linear-gradient(rgba(251, 249, 249,.2),rgba(249, 245, 245,.2));
+    transform: scale(.8);
+}
+
+span {
+    margin-left: 450px;  
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    height: 500px;
+    border: 2px solid transparent;
+    background: linear-gradient(rgba(251, 249, 249,.2),rgba(249, 245, 245,.2));
+    object-fit: con;
+    border-radius: 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+.container:hover {
+    background-color: rgba(0, 0, 0,.3);
+    transform: scale(.8);
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.col {
+    width: 48%;
+}
+
+select, input {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 8px 15px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px 15px;
+    font-weight: 600;
+}
+
+button {
+    width: 200px;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 22px;
+    border-radius: 15px;
+    background-color: #e62e00;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+button:hover{
+	background-color: white;
+	color:black;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .quote {
+        width: 60%;
+        margin: 10px 10px;
+		font-size: 12px;
+    }
+	.main{
+		display: flex;
+		flex-direction: column;
+	}
+    .container {
+        width: 60%;
+        margin: 10px auto;
+		height:auto;
+		
+    }
+	.container h1{
+		font-size: 2.5rem;
+	}
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    select, input {
+        width: calc(100% - 30px); /* Adjust for padding */
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
