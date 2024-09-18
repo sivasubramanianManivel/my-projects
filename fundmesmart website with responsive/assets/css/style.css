@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0.5rem 0.5rem;
+  border: 2px dotted #5c151a;
+  width: 100%;
+}
+.navbar-brand img {
+  width: 200px;
+  height: 60px;
+  align-items: center;
+}
+.signup {
+  background-color: #5c151a;
+  color: white;
+}
+.navbar-nav .line {
+  border-left: 3px solid black;
+}
+nav span i:hover {
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+.fa-apple {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.fa-robot {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    rgba(173, 216, 230, 0.4),
+    rgba(173, 216, 230, 0.7)
+  );
+}
+/* home */
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+    url(../images/pexels-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#home h1 {
+  font-size: 20px;
+  color: white ;
+  letter-spacing: 3px;
+  font-weight: 500; 
+  margin: 0px auto;;
+  
+}
+#home button{
+  margin: 0px auto;;
+}
+/* campaign */
+.btn {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.help {
+  font-size: 24px;
+  font-weight: 500;
+}
+.percent {
+  margin-left: 150px;
+}
+.thumbnail {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.calculator-btn {
+  margin-top: 20px;
+}
+.calculate{
+  display: flex;
+  flex-direction: column;
+
+}
+.campaign-con {
+  text-align: justify;
+}
+.camp{
+  height:100%;
+}
+/* campaign */
+
+/*category */
+/* category */
+
+/* table */
+.table th,
+td {
+  font-weight: 800;
+}
+.tab-para{
+  text-align: justify;
+}
+/* table */
+/* card */
+.perc {
+  margin-left: 50px;
+}
+#card .card {
+  border: none;
+}
+.card-text {
+  font-size: small;
+  font-weight: 500;
+}
+.athlete {
+  margin-left: 110px;
+  align-items: center;
+}
+/* card */
+/* iframe */
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+}
+.list-group-item::before {
+  content: "";
+  color: white;
+  background-color: dodgerblue;
+  border-radius: 7px;
+  padding: 0px 10px;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+}
+/* iframe */
+/* why */
+.divider {
+  margin: 0 auto;
+  height: 2px;
+  width: 100px;
+  background-color: steelblue;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* why */
+/* shopping */
+.divide {
+  margin: 0 170px;
+  height: 5px;
+  width: 100px;
+  background-color: blue;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#shopping .fund {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* shopping */
+
+/* sidemenu */
+
+.clay
+ {
+  width:201px !important;
+  height:400px;
+}
+
+/* sidemenu */
+
+
+  /* dashboard */
+  .dash{
+    width: 150px;
+    height: 160px;
+    padding: 0px 8px;
+    border: 2px solid rgb(255, 165, 0);
+    margin: 8px;
+   
+}
+.pie{
+  width:100%;
+  height:100%;
+}
+
+.dashboard{
+    background-color: #b3e8fb;
+    margin-left: 10px;
+}
+/* dashboard */
+/* participant */
+.container_participant {
+  background-color: rgb(198 242 251);
+}
+
+.border_orange {
+  border-left: 8px solid rgb(255, 136, 0);
+}
+
+.border-p {
+  border-left: 4px solid rgb(255, 136, 0);
+}
+
+.border-md-start {
+  border-left: 1px solid black;
+}
+
+.Participant_tools p {
+  font-size: .8em;
+}
+/* participant */
+/* story */
+
+#story .story {
+  letter-spacing: 3px;
+  line-height: 1.2;
+  text-align: justify;
+}
+#story .bord{
+border:2px solid white !important;
+border-radius: 10px;
+box-shadow: 5px 5px 5px black ;
+            
+}
+/* story */
+/* footer */
+#footer .foot {
+  border: 2px dotted #5c151a;
+  border-radius: 10px;
+}
+/* footer */
